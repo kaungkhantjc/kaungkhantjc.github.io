@@ -35,11 +35,11 @@ useHead({
   ]
 })
 
-defineOgImageScreenshot({
-  screenshot: {
-    delay: 2000
-  }
-})
+// defineOgImageScreenshot({
+//   screenshot: {
+//     delay: 2000
+//   }
+// })
 
 </script>
 
