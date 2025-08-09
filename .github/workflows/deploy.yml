@@ -14,7 +14,10 @@ jobs:
         with:
           node-version: "22"
       - run: npm install
-      - run: npx nuxt generate
+      - run: |
+          export NUXT_SITE_URL=https://kaungkhantjc.dev
+          export NUXT_SITE_NAME="Kaung Khant Kyaw"
+          npx nuxt generate
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
