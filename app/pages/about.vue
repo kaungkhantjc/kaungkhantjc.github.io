@@ -13,7 +13,10 @@ useSeoMeta({
   title: page.value?.seo?.title || page.value?.title,
   ogTitle: page.value?.seo?.title || page.value?.title,
   description: page.value?.seo?.description || page.value?.description,
-  ogDescription: page.value?.seo?.description || page.value?.description
+  ogDescription: page.value?.seo?.description || page.value?.description,
+  ogImage: '/__og-image__/about.jpg',
+  twitterImage: '/__og-image__/about.jpg',
+  twitterCard: 'summary_large_image'
 })
 
 </script>

@@ -35,12 +35,6 @@ useHead({
   ]
 })
 
-// defineOgImageScreenshot({
-//   screenshot: {
-//     delay: 2000
-//   }
-// })
-
 </script>
 
 <template>

@@ -9,10 +9,9 @@ export default defineNuxtConfig({
         'nuxt-og-image',
         'motion-v/nuxt'
     ],
-    ogImage: {
-        defaults: {
-            renderer: 'chromium'
-        }
+    site: {
+        url: 'https://kaungkhantjc.dev',
+        name: 'Kaung Khant Kyaw',
     },
     app: {
         pageTransition: {name: 'page', mode: 'out-in'}

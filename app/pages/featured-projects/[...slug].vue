@@ -8,10 +8,13 @@ const {data: page} = await useAsyncData(route.path, () =>
 if (!page.value) throw createError({statusCode: 404, statusMessage: 'Page not found', fatal: true})
 
 useSeoMeta({
-  title: page.value?.seo.title,
-  ogTitle: page.value?.seo.title,
-  description: page.value?.seo.description,
-  ogDescription: page.value?.seo.description
+  title: page.value?.title,
+  ogTitle: page.value?.title,
+  description: page.value?.description,
+  ogDescription: page.value?.description,
+  ogImage: page.value?.image,
+  twitterImage: page.value?.image,
+  twitterCard: 'summary_large_image'
 })
 
 const projectLink = computed(() => `${window?.location}`)
