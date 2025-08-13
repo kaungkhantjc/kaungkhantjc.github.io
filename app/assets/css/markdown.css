@@ -1,0 +1,140 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+/* GitHub-like markdown styles */
+.prose {
+    @apply max-w-none text-gray-900 dark:text-gray-100;
+}
+
+.prose h1 {
+    @apply text-3xl font-bold border-b border-gray-200 dark:border-gray-700 pb-2 mb-6 mt-8;
+}
+
+.prose h2 {
+    @apply text-2xl font-semibold border-b border-gray-200 dark:border-gray-700 pb-2 mb-4 mt-6;
+}
+
+.prose h3 {
+    @apply text-xl font-semibold mb-3 mt-5;
+}
+
+.prose h4 {
+    @apply text-lg font-semibold mb-2 mt-4;
+}
+
+.prose h5 {
+    @apply text-base font-semibold mb-2 mt-3;
+}
+
+.prose h6 {
+    @apply text-sm font-semibold mb-2 mt-3 text-gray-600 dark:text-gray-400;
+}
+
+.prose p {
+    @apply mb-4 leading-7;
+}
+
+.prose a {
+    @apply text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 underline;
+}
+
+.prose strong {
+    @apply font-semibold;
+}
+
+.prose em {
+    @apply italic;
+}
+
+.prose code {
+    @apply bg-gray-100 dark:bg-gray-800 text-red-600 dark:text-red-400 px-1 py-0.5 rounded text-sm font-mono;
+}
+
+.prose pre {
+    @apply bg-gray-100 dark:bg-gray-900 p-4 rounded-lg overflow-x-auto mb-4 border border-gray-200 dark:border-gray-700;
+}
+
+.prose pre code {
+    @apply bg-transparent text-gray-800 dark:text-gray-200 p-0;
+}
+
+.prose blockquote {
+    @apply border-l-4 border-blue-500 dark:border-blue-600 px-4 pt-2 pb-0.5 my-4 text-zinc-700 dark:text-zinc-300 bg-zinc-50 dark:bg-zinc-800/50;
+}
+
+.prose ul {
+    @apply list-disc list-outside mb-4 space-y-2 pl-6;
+}
+
+.prose ol {
+    @apply list-decimal list-outside mb-4 space-y-2 pl-6;
+}
+
+.prose li {
+    @apply mb-2 pl-2;
+}
+
+.prose li p {
+    @apply mb-2;
+}
+
+.prose li ul,
+.prose li ol {
+    @apply mt-2 mb-2;
+}
+
+.prose li:last-child {
+    @apply mb-0;
+}
+
+.prose table {
+    @apply w-full border-collapse border border-zinc-300 dark:border-gray-600 mb-4;
+}
+
+.prose th {
+    @apply bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 px-3 py-2 text-left font-semibold;
+}
+
+.prose td {
+    @apply border border-gray-300 dark:border-gray-600 px-3 py-2;
+}
+
+.prose tr:nth-child(even) {
+    @apply bg-gray-50 dark:bg-gray-800/30;
+}
+
+.prose hr {
+    @apply border-0 border-t border-gray-300 dark:border-gray-600 my-6;
+}
+
+.prose img {
+    @apply max-w-full h-auto rounded-lg shadow-sm border border-gray-200 dark:border-gray-700;
+}
+
+.prose kbd {
+    @apply bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-2 py-1 rounded text-sm font-mono border border-gray-300 dark:border-gray-600;
+}
+
+.prose mark {
+    @apply bg-yellow-200 dark:bg-yellow-800 text-yellow-900 dark:text-yellow-100 px-1;
+}
+
+.prose del {
+    @apply line-through text-gray-500 dark:text-gray-400;
+}
+
+.prose ins {
+    @apply underline text-green-600 dark:text-green-400;
+}
+
+/* Task lists */
+.prose input[type="checkbox"] {
+    @apply mr-2;
+}
+
+/* Code block language label */
+.prose pre[class*="language-"]::before {
+    @apply absolute top-2 right-2 text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-zinc-700 px-2 py-1 rounded;
+    content: attr(data-language);
+}
+
