@@ -18,7 +18,7 @@ export default defineAppConfig({
             'aria-label': 'Stackoverflow'
         }, {
             'icon': 'lucide:linkedin',
-            'to': 'https://linkedin.com/in/kaungkhantjc',
+            'to': 'https://linkedin.com/in/kaungkhantx',
             'target': '_blank',
             'aria-label': 'LinkedIn'
         }, {
