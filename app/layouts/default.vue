@@ -3,9 +3,13 @@
 
 <template>
   <div>
-    <UContainer class="sm:border-x border-default max-w-4xl mx-auto">
+    <UContainer class="flex flex-col min-h-screen sm:border-x border-default max-w-4xl mx-auto">
       <AppHeader :links="navLinks" />
-      <slot />
+
+      <main class="flex-1">
+        <slot />
+      </main>
+
       <AppFooter />
     </UContainer>
   </div>
